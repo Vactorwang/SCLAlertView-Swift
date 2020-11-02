@@ -122,6 +122,10 @@ open class SCLAlertViewResponder {
       self.alertview.viewText.text = subTitle != nil ? subTitle : ""
     }
     
+    open func setSubAtrTitle(_ atr:NSAttributedString){
+        self.alertview.viewText.attributedText = atr
+    }
+    
     open func close() {
         self.alertview.hideView()
     }
